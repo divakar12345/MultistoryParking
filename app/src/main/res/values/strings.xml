@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Multistory Parking</string>
+    <string name="allow">Allow</string>
+    <string name="deny">Deny</string>
+    <string name="welcome_back">Welcome \nBack</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="hint_email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_to_join">Sign up to join</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="admin_access_is">Admin access is</string>
+    <string name="here">here</string>
+    <string name="admin">Admin</string>
+    <string name="add_a_floor">Add a Floor</string>
+    <string name="note">Note: Please add the area of the space in sqft (Bike - 1*2, Car - 3*4, Bus - 4*8).</string>
+    <string name="area_in_sqft">Area in sqft.</string>
+    <string name="go">Go!</string>
+    <string name="home">Home</string>
+    <string name="reserve">Reserve</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="vehicle_details">Vehicle Details</string>
+    <string name="enter_vehicle_number">Please enter the vehicle number</string>
+    <string name="submit">Submit</string>
+    <string name="welcome">Welcome!!</string>
+    <string name="assign_a_parking_space">Assign a parking space</string>
+    <string name="hello">Hello!!</string>
+    <string name="checkout">Checkout</string>
+    <string name="spot_booking_placeholder">Since you have reserved a lot/space for your vehicle, you cannot do spot booking!!</string>
+    <string name="reserve_placeholder">Since you have made spot booking on a lot/space for your vehicle, you cannot reserve any!!</string>
+    <string name="reserve_tagline">Reserve your space in one tap!!</string>
+    <string name="reserve_description">You can reserve your space/lot for a whole day!!</string>
+    <string name="charges_hint">Charges will be based on the vehicle.</string>
+    <string name="reserve_my_parking_space">Reserve my parking space</string>
+    <string name="unreserve">Unreserve</string>
+    <string name="floor_map">Floor Map</string>
+    <string name="set_pricing">Set Pricing</string>
+    <string name="view_audit">View Summary</string>
+    <string name="set_pricing_for_bike">Set Pricing for Bike</string>
+    <string name="base_pay">Base Price</string>
+    <string name="additional_pay_for_every_hour">Additional price for every hour</string>
+    <string name="reservation_amount">Reservation Amount</string>
+    <string name="invoice">Invoice</string>
+    <string name="pay">Pay</string>
+    <string name="no_of_hours">No of Hours</string>
+    <string name="extra_hours_price">Extra Hours Price</string>
+    <string name="check_in_time">Check-in Time</string>
+    <string name="check_out_time">Check-out Time</string>
+    <string name="discount">Discount</string>
+    <string name="amount_payable">Amount Payable</string>
+    <string name="reservation_time">Reservation Time</string>
+    <string name="total_price">Total Price</string>
+    <string name="apply_coupon">Apply Coupon</string>
+    <string name="set_discount">Set Discount</string>
+    <string name="discount_for_extra_hours">Discount for extra hours</string>
+    <string name="discount_for_first_hour">Discount for first hour</string>
+    <string name="discount_note">Note: Discount should be in percentage.</string>
+    <string name="enter_your_discount_title">Enter your discount title</string>
+    <string name="no_of_coupons_per_user">No of coupons per user</string>
+    <string name="audit">Summary</string>
+    <string name="empty_stack">Empty Stack!!</string>
+    <string name="total_earnings">Total Earnings</string>
+    <string-array name="vehicle_type">
+        <item>Bike</item>
+        <item>Car</item>
+        <item>Bus</item>
+    </string-array>
+</resources>

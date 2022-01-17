@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.multistoryparking.app.view.fragment.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_splashFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.multistoryparking.app.view.fragment.SignInFragment"
+        android:label="SignInFragment"
+        tools:layout="@layout/fragment_sign_in">
+
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+        <action
+            android:id="@+id/action_signInFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+        <action
+            android:id="@+id/action_signInFragment_to_adminFragment"
+            app:destination="@id/adminFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.multistoryparking.app.view.fragment.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+        <action
+            android:id="@+id/action_signUpFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+        <action
+            android:id="@+id/action_signUpFragment_to_adminFragment"
+            app:destination="@id/adminFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.multistoryparking.app.view.fragment.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_floorMapFragment"
+            app:destination="@id/floorMapFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.multistoryparking.app.view.fragment.AdminFragment"
+        android:label="AdminFragment"
+        tools:layout="@layout/fragment_admin">
+
+        <action
+            android:id="@+id/action_adminFragment_to_setPricingFragment"
+            app:destination="@id/setPricingFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+        <action
+            android:id="@+id/action_adminFragment_to_setDiscountFragment"
+            app:destination="@id/setDiscountFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+        <action
+            android:id="@+id/action_adminFragment_to_auditFragment"
+            app:destination="@id/auditFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reserveFragment"
+        android:name="com.multistoryparking.app.view.fragment.ReserveFragment"
+        android:label="ReserveFragment"
+        tools:layout="@layout/fragment_reserve">
+
+        <action
+            android:id="@+id/action_reserveFragment_to_floorMapFragment"
+            app:destination="@id/floorMapFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.multistoryparking.app.view.fragment.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+
+        <action
+            android:id="@+id/action_profileFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/floorMapFragment"
+        android:name="com.multistoryparking.app.view.fragment.FloorMapFragment"
+        android:label="FloorMapFragment"
+        tools:layout="@layout/fragment_floor_map">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/setPricingFragment"
+        android:name="com.multistoryparking.app.view.fragment.SetPricingFragment"
+        android:label="SetPricingFragment"
+        tools:layout="@layout/fragment_set_pricing">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/setDiscountFragment"
+        android:name="com.multistoryparking.app.view.fragment.SetDiscountFragment"
+        android:label="SetDiscountFragment"
+        tools:layout="@layout/fragment_set_discount">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/auditFragment"
+        android:name="com.multistoryparking.app.view.fragment.AuditFragment"
+        android:label="AuditFragment"
+        tools:layout="@layout/fragment_audit">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bikeAuditFragment"
+        android:name="com.multistoryparking.app.view.fragment.BikeAuditFragment"
+        android:label="BikeAuditFragment"
+        tools:layout="@layout/fragment_bike_audit">
+
+        <action
+            android:id="@+id/action_bikeAuditFragment_to_carAuditFragment"
+            app:destination="@id/carAuditFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/carAuditFragment"
+        android:name="com.multistoryparking.app.view.fragment.CarAuditFragment"
+        android:label="CarAuditFragment"
+        tools:layout="@layout/fragment_car_audit">
+
+        <action
+            android:id="@+id/action_carAuditFragment_to_busAuditFragment"
+            app:destination="@id/busAuditFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/busAuditFragment"
+        android:name="com.multistoryparking.app.view.fragment.BusAuditFragment"
+        android:label="BusAuditFragment"
+        tools:layout="@layout/fragment_bus_audit">
+
+    </fragment>
+
+</navigation>

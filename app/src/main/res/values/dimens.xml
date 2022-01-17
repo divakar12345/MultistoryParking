@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+
+    <dimen name="default_text_size">14sp</dimen>
+
+    <dimen name="elevation_default_top_app_bar">0dp</dimen>
+
+
+    <!-- Pin View -->
+
+
+    <!-- dp -->
+    <dimen name="dimen_1_dp">1dp</dimen>
+    <dimen name="dimen_5_dp">5dp</dimen>
+    <dimen name="dimen_10_dp">10dp</dimen>
+    <dimen name="dimen_16_dp">16dp</dimen>
+    <dimen name="dimen_20_dp">20dp</dimen>
+    <dimen name="dimen_30_dp">30dp</dimen>
+    <dimen name="dimen_40_dp">40dp</dimen>
+    <dimen name="dimen_60_dp">60dp</dimen>
+
+
+    <!-- sp -->
+    <dimen name="dimen_2_sp">2sp</dimen>
+    <dimen name="dimen_14_sp">14sp</dimen>
+    <dimen name="dimen_16_sp">16sp</dimen>
+    <dimen name="dimen_18_sp">18sp</dimen>
+    <dimen name="dimen_20_sp">20sp</dimen>
+    <dimen name="dimen_24_sp">24sp</dimen>
+
+</resources>

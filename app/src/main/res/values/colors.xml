@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <color name="black">@android:color/black</color>
+
+    <color name="brown_red">#B53030</color>
+
+    <color name="catalina_blue_35">#5922385A</color>
+
+    <color name="color_background">@color/white</color>
+    <color name="color_error">#B00020</color>
+    <color name="color_on_background">@color/black</color>
+    <color name="color_on_error">#FFF</color>
+    <color name="color_on_primary">@color/white</color>
+    <color name="color_on_secondary">@color/white</color>
+    <color name="color_on_surface">@color/dodger_blue</color>
+    <color name="color_primary">@color/dodger_blue</color>
+    <color name="color_primary_dark">@color/dodger_blue</color>
+    <color name="color_primary_variant">@color/dodger_blue</color>
+    <color name="color_secondary">@color/dodger_blue</color>
+    <color name="color_secondary_variant">@color/prussian_blue</color>
+    <color name="color_surface">@color/patterns_blue</color>
+    <color name="color_text">@color/catalina_blue_35</color>
+    <color name="dim_gray">#707070</color>
+
+    <color name="yellow">#ffd700</color>
+    <color name="mustard">#887300</color>
+
+    <color name="dodger_blue">#1089FF</color>
+
+    <color name="patterns_blue">#DBE5F0</color>
+
+    <color name="prussian_blue">#023E6C</color>
+
+    <color name="white">@android:color/white</color>
+    <color name="white_semi_transparent">#80FFFFFF</color>
+    <color name="light_grey">#F5F5F5</color>
+    <color name="medium_grey">#58595B</color>
+    <color name="light_bluish_grey">#CED4DA</color>
+</resources>

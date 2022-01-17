@@ -1,0 +1,69 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+    <style name="Base.MaterialThemeBuilder" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:statusBarColor">?colorSurface</item>
+        <item name="android:navigationBarColor">?android:colorBackground</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+        <item name="android:navigationBarDividerColor" tools:ignore="NewApi">
+            ?colorControlHighlight
+        </item>
+    </style>
+
+    <style name="Base.App" parent="Base.MaterialThemeBuilder">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant</item>
+
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorError">@color/color_error</item>
+
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="colorOnError">@color/color_on_error</item>
+
+        <item name="android:windowBackground">@color/color_background</item>
+        <item name="android:statusBarColor">?colorPrimarySurface</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textColorPrimary">@color/color_text</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+
+        <item name="toolbarStyle">@style/Widget.App.Toolbar</item>
+
+        <item name="checkboxStyle">@style/Widget.MaterialComponents.CompoundButton.CheckBox</item>
+        <item name="radioButtonStyle">@style/Widget.MaterialComponents.CompoundButton.RadioButton
+        </item>
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout.Primary</item>
+    </style>
+
+    <style name="TextAppearance.App.ActionBar.Title" parent="Base.TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Widget.App.Toolbar" parent="@style/Widget.MaterialComponents.Toolbar.PrimarySurface">
+        <item name="android:elevation">@dimen/elevation_default_top_app_bar</item>
+        <item name="titleTextAppearance">@style/TextAppearance.App.ActionBar.Title</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:maxHeight">?attr/actionBarSize</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout.Primary" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textColorHint">@color/color_text</item>
+        <item name="hintTextColor">@color/color_text</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="startIconTint">@color/color_text</item>
+        <item name="hintEnabled">false</item>
+    </style>
+
+</resources>

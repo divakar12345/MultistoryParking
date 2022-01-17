@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.multistoryparking.app.view.viewmodel.ProfileViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_grey">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/color_primary_dark"
+            app:layout_constraintBottom_toTopOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/title_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/profile_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_24_sp"
+                        android:fontFamily="@font/roboto_bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_40_dp"
+                    android:layout_marginBottom="@dimen/dimen_60_dp"
+                    android:padding="@dimen/dimen_20_dp"
+                    android:background="@drawable/card_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title_bar" >
+
+                    <RelativeLayout
+                        android:id="@+id/email_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/email_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/light_blue_circle"
+                            android:padding="@dimen/dimen_10_dp"
+                            android:src="@drawable/ic_mail"
+                            app:tint="@color/prussian_blue" />
+
+                        <TextView
+                            android:id="@+id/email_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dimen_10_dp"
+                            android:layout_toEndOf="@id/email_icon"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textColor="@color/medium_grey"
+                            android:textSize="@dimen/dimen_16_sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@id/email_layout"
+                        android:layout_marginTop="@dimen/dimen_10_dp"
+                        android:id="@+id/vehicle_number_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/vehicle_number_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/light_blue_circle"
+                            android:padding="@dimen/dimen_10_dp"
+                            android:src="@drawable/ic_license_plate"
+                            app:tint="@color/prussian_blue" />
+
+                        <TextView
+                            android:id="@+id/vehicle_number_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dimen_10_dp"
+                            android:layout_toEndOf="@id/vehicle_number_icon"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textColor="@color/medium_grey"
+                            android:textSize="@dimen/dimen_16_sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@id/vehicle_number_layout"
+                        android:layout_marginTop="@dimen/dimen_10_dp"
+                        android:id="@+id/vehicle_type_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/vehicle_type_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/light_blue_circle"
+                            android:padding="@dimen/dimen_10_dp"
+                            android:src="@drawable/ic_car"
+                            app:tint="@color/prussian_blue" />
+
+                        <TextView
+                            android:id="@+id/vehicle_type_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dimen_10_dp"
+                            android:layout_toEndOf="@id/vehicle_type_icon"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textColor="@color/medium_grey"
+                            android:textSize="@dimen/dimen_16_sp" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/logout_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vehicle_type_layout"
+                        android:layout_marginTop="@dimen/dimen_40_dp"
+                        android:background="@drawable/theme_button"
+                        android:fontFamily="@font/roboto_bold"
+                        android:onClick="@{viewModel::logout}"
+                        android:padding="10dp"
+                        android:text="@string/logout"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_14_sp" />
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

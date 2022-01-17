@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "517954633990",
+    "firebase_url": "https://multistoryparking-default-rtdb.firebaseio.com",
+    "project_id": "multistoryparking",
+    "storage_bucket": "multistoryparking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517954633990:android:4b9e2bd3a758dd6403de87",
+        "android_client_info": {
+          "package_name": "com.multistoryparking.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517954633990-lgq40qvb59v9rgft2p3232krasmovgre.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.multistoryparking.app",
+            "certificate_hash": "156322c0c4e17e2967d3f47896babebf4728ab29"
+          }
+        },
+        {
+          "client_id": "517954633990-0h75upc9oj44t7tgqjluvkmpapfdi9p8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSO1zU1RpfM2aL6YyQ2Np3h9_1JVbRO1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517954633990-0h75upc9oj44t7tgqjluvkmpapfdi9p8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

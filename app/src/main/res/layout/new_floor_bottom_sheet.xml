@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_sheet_background"
+        android:padding="@dimen/dimen_20_dp">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/dimen_30_dp"
+            android:layout_height="@dimen/dimen_2_sp"
+            android:background="@color/patterns_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/add_floor_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:text="@string/add_a_floor"
+            android:textColor="@color/medium_grey"
+            android:textSize="@dimen/dimen_20_sp"
+            android:fontFamily="@font/roboto_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/area_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:background="@drawable/edittext_bordered"
+            android:hint="@string/area_in_sqft"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/medium_grey"
+            android:textColorHint="@color/light_bluish_grey"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add_floor_text" />
+
+        <TextView
+            android:id="@+id/note_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:text="@string/note"
+            android:textColor="@color/dim_gray"
+            android:textSize="@dimen/dimen_14_sp"
+            android:fontFamily="@font/roboto_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/area_edittext"
+            tools:ignore="LabelFor" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/go_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_40_dp"
+            android:background="@drawable/theme_button"
+            android:padding="@dimen/dimen_10_dp"
+            android:text="@string/go"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_14_sp"
+            android:fontFamily="@font/roboto_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/note_text" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
